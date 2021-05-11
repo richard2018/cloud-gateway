@@ -1,0 +1,62 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
+      routes:
+        - id: stock-service
+          uri: lb://stock-service
+          predicates:
+            - Path=/getIpAndPort
+            - Header=X-Request-appId,Tuling
+#            - TulingTimeBetween=上午10:00,下午11:00
+          filters:
+            - AddRequestHeader=X-Request-Company,tuling
+            - AddResponseHeader=X-Response-Company,tulingRes
+            - AddRequestParameter=company,tuling
+            - PrefixPath=/stock
+#            - TimeMonitor=enabled,true
+    sentinel:
+      transport:
+        dashboard: localhost:8718
+      enabled: true
+  profiles:
+    active: filterfacotry
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+
+

@@ -1,0 +1,6 @@
+/Users/lidada/Documents/source/tuling-source/tuling-3-springcloud-alibaba-demo/order-service/src/main/java/com/zhuge/order/service/OrderService.java
+/Users/lidada/Documents/source/tuling-source/tuling-3-springcloud-alibaba-demo/order-service/src/main/java/com/zhuge/order/controller/OrderController.java
+/Users/lidada/Documents/source/tuling-source/tuling-3-springcloud-alibaba-demo/order-service/src/main/java/com/zhuge/order/feign/CreditService.java
+/Users/lidada/Documents/source/tuling-source/tuling-3-springcloud-alibaba-demo/order-service/src/main/java/com/zhuge/order/feign/WmsService.java
+/Users/lidada/Documents/source/tuling-source/tuling-3-springcloud-alibaba-demo/order-service/src/main/java/com/zhuge/order/feign/StockService.java
+/Users/lidada/Documents/source/tuling-source/tuling-3-springcloud-alibaba-demo/order-service/src/main/java/com/zhuge/order/OrderServiceApplication.java
