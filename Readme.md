@@ -1,3 +1,7 @@
-springcloud alibaba微服务源码课demo，本来是不打算传的，但是很多同学问，节省沟通成本还是传下吧，
-希望大家不要下载这个代码，最好自己动手依照司马老师讲的微服务功能使用课自己搭一个demo,如果连demo
-都不愿意搭的同学源码可能很难学好！
+echo "# cloud-gateway" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/richard2018/cloud-gateway.git
+git push -u origin main
